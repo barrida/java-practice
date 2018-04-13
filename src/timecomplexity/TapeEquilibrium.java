@@ -1,10 +1,10 @@
 package timecomplexity;
 
-public class Solution {
+public class TapeEquilibrium {
 
 	public static void main(String[] args) {
 
-		Solution s = new Solution();
+		TapeEquilibrium s = new TapeEquilibrium();
 		int[] A = new int[] {3,1,2,4,3};
 		s.solution(A);
 	}
