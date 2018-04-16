@@ -15,13 +15,34 @@ public class FrogJmp {
 	 * Count the minimal number of jumps that the small frog must perform to
 	 * reach its target.
 	 * 
-	 * @param X current position
-	 * @param Y target position
-	 * @param D fixed distance to jump
+	 * @param X
+	 *            current position
+	 * @param Y
+	 *            target position
+	 * @param D
+	 *            fixed distance to jump
 	 * @return solution
 	 */
 	public int solution(int X, int Y, int D) {
-		return 0;
+
+		/**
+		 * counter = 0 
+		 * if X == Y  return 0
+		 * Add X + D. If X + D is less than Y, increase counter,
+		 * repeat this. if X + D > Y increase counter and return counter.
+		 */
+		int numberOfJumps = 0;
+
+		if (X == Y) {
+			return 0;
+		}
+		
+		while (X + D < Y) {
+			++numberOfJumps;
+			X = X + D;
+		}
+
+		return ++numberOfJumps;
 	}
 
 }
