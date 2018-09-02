@@ -65,3 +65,13 @@ function returnMin {
 	endfor
 	return min
 }
+
+
+
+iterate through array A (A.length = 5)
+
+0 : (A[0]) - (A[1] + A[2] + A[3] + A[4]) set it min
+1 : (A[0] + A[1]) - (A[2] + A[3] + A[4]) if this < min set it min
+2 : (A[0] + A[1] + A[2]) - (A[3] + A[4]) if this < min set it min
+3 : (A[0] + A[1] + A[2] + A[3]) - (A[4]) if this < min set it min 
+return min

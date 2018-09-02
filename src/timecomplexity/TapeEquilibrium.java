@@ -9,6 +9,11 @@ public class TapeEquilibrium {
 		s.solution(A);
 	}
 
+	/**
+	 * O(N*N)
+	 * @param A
+	 * @return
+	 */
 	public int solution(int A[]) {
 		int min = 0;
 		for (int i = 0; i < A.length - 1; i++) {
@@ -28,6 +33,20 @@ public class TapeEquilibrium {
 		
 		return min;
 		
+	}
+	
+	public int solution2(int A[]){
+		
+		
+		int min = 0;
+		for (int i = 0; i < A.length; i++) {
+			
+			if (i == 0) {
+				min = A[i] - solution2(A);
+			}
+			
+		}
+		return 0;
 	}
 
 }

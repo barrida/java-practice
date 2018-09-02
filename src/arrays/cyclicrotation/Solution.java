@@ -25,6 +25,9 @@ public class Solution {
 	}
 	
 	 public static int[] solution(int[] A, int K){
+		 if (A.length == 0) {
+			return A;
+		}
 		 List<Integer> intList = createArrayList(A);
 		 int[] arr = rotateArrayList(K, intList);
 		 return arr;

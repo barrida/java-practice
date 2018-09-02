@@ -2,7 +2,6 @@ package arrays.oldoccurences;
 
 import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 import java.util.Map.Entry;
 
@@ -15,7 +14,7 @@ public class Solution {
 
 	public int solution(int[] A) {
 
-		int solution = -1;
+		int solution = 0;
 		Map<Integer, ArrayList<Integer>> map = new HashMap<Integer, ArrayList<Integer>>();
 
 		//create map from array
@@ -31,9 +30,12 @@ public class Solution {
 			}
 		}
 		
+	
+        
+		
 		//find unpaired element
 		for (Entry<Integer, ArrayList<Integer>> entry : map.entrySet()) {
-			if (entry.getValue().size() == 1) {
+			if ((entry.getValue().size() % 2) == 1) {
 				solution = entry.getKey();
 				break;
 			}

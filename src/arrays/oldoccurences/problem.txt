@@ -39,9 +39,9 @@ expected worst-case space complexity is O(1), beyond input storage (not counting
   Input : [9,3,9,3,9,7,9]
   
   //create hashmap 
-  9 -> 0,2,6
-  3 -> 1,3,1 
+  9 -> 0,2,4,6
   7 -> 1
+  3 -> 1,3
   
   //find unpaired element
   if the size of the map equals to 1, it means it is unpaired. In this case, 7. 

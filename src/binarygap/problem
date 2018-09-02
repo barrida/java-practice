@@ -41,3 +41,12 @@ binaryGap: 1
 9/2 1
 4/2 0
 2/2 0
+
+/****************/
+stderr:
+Exception in thread "main" java.lang.OutOfMemoryError: Java heap space
+	at java.lang.AbstractStringBuilder.<init>(AbstractStringBuilder.java:68)
+	at java.lang.StringBuilder.<init>(StringBuilder.java:101)
+	at Solution.solution(Solution.java:6)
+	at Exec.run(exec.java:46)
+	at Exec.main(exec.java:31)
