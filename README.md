@@ -1,3 +1,2 @@
 # Java practice codes
-This project is created to study  Oracle Certified Associate Java SE 8 Programmer I.
- 
+This project is created to practice coding in Java. 
