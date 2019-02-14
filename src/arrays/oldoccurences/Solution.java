@@ -17,7 +17,8 @@ public class Solution {
 		int solution = 0;
 		Map<Integer, ArrayList<Integer>> map = new HashMap<Integer, ArrayList<Integer>>();
 
-		//create map from array
+	
+		// create map from array
 		for (int i = 0; i < A.length; i++) {
 			if (!map.containsKey(A[i])) {
 				ArrayList<Integer> list = new ArrayList<Integer>();
@@ -29,11 +30,8 @@ public class Solution {
 				map.put(A[i], list2);
 			}
 		}
-		
-	
-        
-		
-		//find unpaired element
+
+		// find unpaired element
 		for (Entry<Integer, ArrayList<Integer>> entry : map.entrySet()) {
 			if ((entry.getValue().size() % 2) == 1) {
 				solution = entry.getKey();

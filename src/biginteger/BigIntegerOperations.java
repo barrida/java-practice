@@ -28,6 +28,8 @@ public class BigIntegerOperations {
 
 	    numberA = numberA.negate();
 	    System.out.println("numberA = " + numberA);
+	    
+	    numberA.compareTo(numberB);
 
 
 	}
