@@ -4,7 +4,7 @@ import java.io.*;
 import java.util.*;
 import java.math.BigInteger;
 
-public class SortMaxPairwiseAlgorithm implements AlgorithmStrategy{
+public class SortMaxPairwiseAlgorithm{
 
 	public static void main(String[] args) {
 		FastScanner scanner = new FastScanner(System.in);
